@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Article</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+        .feedback {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio de Artículos</h1>
+    <div  id="quetion-container">
+        <p id="quetion-text"></p>
+        <form id="options-form"></form>
+        <button id="validate-btn" onclick="validateAnswer()">Evaluar</button>
+        <p id="feedback" class="feedback"></p>
+        <button id="next-btn" class="hidden" onclick="nextQuestion()">Siguiente</button>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: "¿Cuál es el idioma más hablado en el mundo",
+                options: ["Inglés", "Mandarín", "Español"],
+                correctAnswer: 1
+            },
+            {
+                question: "¿Cuál es la capital de Francia?",
+                options: ["Berlín", "Madrid", "París"],
+                correctAnswer: 2
+            },
+        ];
+        
+        let currentQuestionIndex = 0;
+        function loadQuestion() {
+            const currentQuestion = questions[currentQuestionIndex];
+            document.getElementById('question-text').textContent = currentQuestion.question;
+            const optionsForm = document.getElementById('options-form');
+            optionsForm.innerHTML = '';
+            currentQuestion.options.forEach((option, index)) 
+        }
+
+    </script>
+</body>
+</html>

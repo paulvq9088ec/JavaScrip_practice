@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+.container {
+    display: flex;
+    justify-content: center;
+}
 
 .calculadora{
     width: 400px;
@@ -24,6 +28,11 @@
     margin: 2px;
 }
 
+.calculadora button:hover {
+    background-color: gray;
+    border: 2px white solid;
+}
+
 .display{
     height: 100px;
     background-color: #7d7d7d;
@@ -31,6 +40,8 @@
     grid-column: 1/-1; /*hace que el elemento ocupe todo el espacio*/
     border: 2px #7d7d7d solid;
     border-radius:10px;
+    text-align: end;
+    padding: 14px 0;
 }
 
 .span2 {
@@ -39,9 +50,11 @@
 }
 
 .valor-superior{
-
+    font-size: 26px;
+    color: white;
 }
 
 .valor-inferior{
-
+    font-size: 40px;
+    color: white;
 }

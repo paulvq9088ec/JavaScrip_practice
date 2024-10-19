@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="https://fontawesome.com/v5/icons/circle?f=classic&s=regular">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="perfil">
+            <div id="fecha"></div>
+            <h1>Hola, mi gente</h1>
+            <span>Vamos a cumplir tus metas</span>
+        </div>
+        
+        <div class="agregar-tarea">
+            <input type="text" id="input" placeholder="agregar una tarea">
+            <img src="imgs/plus-solid.svg" alt="" class="img">
+        </div>
+        <div class="seccion-tarea">
+            <h3>Estas son tus tareas pendientes</h3>
+            <ul class="lista"></ul>
+            <li>
+                <img src="imgs/circle-regular.svg" alt="" class="img" data="realizado" id="0">
+                <p class="texto">Hacer la tarea</p>
+                <img src="imgs/trash-solid.svg" alt="" class="img" data="eliminado" id="0">
+            </li>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
